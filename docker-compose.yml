@@ -3,6 +3,6 @@ version: '3'
 services:
   resolver:
     build: .
-    command: bioregistry web --port 80 --host "0.0.0.0" --with-gunicorn --workers 4
+    restart: always
     ports:
-      - 80:80
+      - 8766:8766
