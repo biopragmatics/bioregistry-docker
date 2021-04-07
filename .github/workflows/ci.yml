@@ -2,6 +2,8 @@ name: Build and Push to Dockerhub
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * *"
 
 jobs:
   docker:
