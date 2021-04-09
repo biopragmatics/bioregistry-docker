@@ -23,6 +23,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: cthoyt/bioregistry:latest
+          tags: bioregistry/bioregistry:latest
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
