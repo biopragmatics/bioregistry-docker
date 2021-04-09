@@ -1,6 +1,6 @@
 # bioregistry-docker
 
-This repository uses Docker to containerize the Bioregistry web application.
+This repository uses Docker to containerize the Bioregistry web application. A public instance maintained by the [INDRA Lab](https://indralab.github.io) is served at https://bioregistry.io.
 
 ## 🌐 Running Locally
 
