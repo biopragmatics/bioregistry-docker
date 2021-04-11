@@ -1,4 +1,4 @@
-# bioregistry-docker
+# bioregistry-docker [![Build and Push to Dockerhub](https://github.com/bioregistry/bioregistry-docker/actions/workflows/ci.yml/badge.svg)](https://github.com/bioregistry/bioregistry-docker/actions/workflows/ci.yml)
 
 This repository uses Docker to containerize the Bioregistry web application. A public instance maintained by the [INDRA Lab](https://indralab.github.io) is served at https://bioregistry.io.
 
