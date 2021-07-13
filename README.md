@@ -2,7 +2,9 @@
 
 This repository uses Docker to containerize the Bioregistry web application. A public instance maintained by the [INDRA Lab](https://indralab.github.io) is served at https://bioregistry.io.
 
-## 🌐 Running Locally
+## Running
+
+### 🌐 Running Locally from Source
 
 A dockerfile for pulling the latest Bioregistry service and running its web app. Run with:
 
@@ -12,15 +14,25 @@ $ cd bioregistry-docker
 $ docker-compose up
 ```
 
-## 🐋 Running from Docker
+### 🐋 Running Locally from Docker
 
 The image is hosted on Docker Hub under `bioregistry/bioregistry:latest` and can be run with:
 
 ```shell
-$ docker run -id -p 8766:8766 bioregistry/bioregistry:latest
+$ docker run -id --name bioregistry -p 8766:8766 bioregistry/bioregistry:latest
 ```
 
 The default port run by the app is `8766`, but the `-p` option lets you map it to another port.
+
+If you want to stop/update/restart it, check the [`restart.sh`](restart.sh) script.
+
+### 🐋 Running Remotely from Docker
+
+```shell
+$ git clone https://github.com/bioregistry/bioregistry-docker.git
+$ cd bioregistry-docker
+$ ssh ADDRESS 'bash -s' < restart.sh
+```
 
 ## 📡 Pushing to Docker Hub
 
