@@ -1,6 +1,7 @@
 # bioregistry-docker [![Build and Push to Dockerhub](https://github.com/bioregistry/bioregistry-docker/actions/workflows/ci.yml/badge.svg)](https://github.com/bioregistry/bioregistry-docker/actions/workflows/ci.yml)
 
-This repository uses Docker to containerize the Bioregistry web application. A public instance maintained by the [INDRA Lab](https://indralab.github.io) is served at https://bioregistry.io.
+This repository uses Docker to containerize the Bioregistry web application. A public instance
+maintained by the [INDRA Lab](https://indralab.github.io) is served at https://bioregistry.io.
 
 ## Running
 
@@ -36,9 +37,19 @@ $ ssh ADDRESS 'bash -s' < restart.sh
 
 ## 📡 Pushing to Docker Hub
 
-This repository is set up with a [GitHub Action](https://github.com/bioregistry/bioregistry-docker/actions/workflows/ci.yml)
-to build the dockerfile and push to [Docker Hub](https://hub.docker.com/repository/docker/bioregistry/bioregistry).
+This repository is set up with
+a [GitHub Action](https://github.com/bioregistry/bioregistry-docker/actions/workflows/ci.yml)
+to build the dockerfile and push
+to [Docker Hub](https://hub.docker.com/repository/docker/bioregistry/bioregistry).
+
+## 🎁 Support
+
+The Bioregistry was developed by the [INDRA Lab](https://indralab.github.io), a part of the
+[Laboratory of Systems Pharmacology](https://hits.harvard.edu/the-program/laboratory-of-systems-pharmacology/about/)
+and the [Harvard Program in Therapeutic Science (HiTS)](https://hits.harvard.edu)
+at [Harvard Medical School](https://hms.harvard.edu/).
 
 ## 💰 Funding
 
-The development of the Bioregistry is funded by the DARPA Young Faculty Award W911NF2010255 (PI: Benjamin M. Gyori).
+The development of the Bioregistry is funded by the DARPA Young Faculty Award W911NF2010255 (PI:
+Benjamin M. Gyori).
