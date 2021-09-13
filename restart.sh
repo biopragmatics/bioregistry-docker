@@ -9,7 +9,7 @@ docker stop $BIOREGISTRY_CONTAINER_ID
 docker rm $BIOREGISTRY_CONTAINER_ID
 
 # Pull the latest
-docker pull bioregistry/bioregistry:latest
+docker pull biopragmatics/bioregistry:latest
 
 # Run the start script
-docker run -id --name bioregistry -p 8766:8766 bioregistry/bioregistry:latest
+docker run -id --name bioregistry -p 8766:8766 biopragmatics/bioregistry:latest
