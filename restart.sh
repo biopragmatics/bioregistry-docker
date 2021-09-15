@@ -1,12 +1,13 @@
 #!/bin/bash
 
-# store the bioregistry id
+# Store the container's hash
 BIOREGISTRY_CONTAINER_ID=$(docker ps --filter "name=bioregistry" -q)
 
-# Stop and remove the old container taking advantage
-#  of the fact that it's named specifically
-docker stop $BIOREGISTRY_CONTAINER_ID
-docker rm $BIOREGISTRY_CONTAINER_ID
+# Stop and remove the old container, taking advantage of the fact that it's named specifically
+if [ -n "BIOREGISTRY_CONTAINER_ID" ]; then
+  docker stop BIOREGISTRY_CONTAINER_ID
+  docker rm BIOREGISTRY_CONTAINER_ID
+fi
 
 # Pull the latest
 docker pull biopragmatics/bioregistry:latest
