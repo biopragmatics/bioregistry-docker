@@ -23,6 +23,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
+          # See: https://github.com/docker/build-push-action/blob/master/docs/advanced/multi-platform.md
+          platforms: linux/amd64,linux/arm64
           tags: biopragmatics/bioregistry:latest
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
